@@ -1,0 +1,268 @@
+/*
+....##......##...########...#####..
+..####....####...##....##..##...##.
+....##......##.......##...##.....##
+....##......##......##....##.....##
+....##......##.....##.....##.....##
+....##......##.....##......##...##.
+..######..######...##.......#####..
+*/
+@media (max-width: 1170px) {
+  * {
+    font-size: 90%;
+  }
+
+  .container {
+    padding: 2%;
+  }
+
+  .header .container {
+    padding: 0 2%;
+  }
+
+  .prod-header nav a {
+    font-size: 200%;
+  }
+
+  .card {
+    width: 330px;
+  }
+
+  .menu nav a {
+    font-size: 200%;
+  }
+
+  .social-rights p {
+    font-size: 150%;
+  }
+
+  footer .container {
+    padding: 23px 2%;
+  }
+}
+
+/*
+....##.....#####....#######....#####..
+..####....##...##..##.....##..##...##.
+....##...##.....##.##.....##.##.....##
+....##...##.....##..#######..##.....##
+....##...##.....##.##.....##.##.....##
+....##....##...##..##.....##..##...##.
+..######...#####....#######....#####..
+*/
+@media (max-width: 1080px) {
+  .products {
+    display: grid;
+    grid-template-areas:
+      "A B"
+      "C D"
+      "E F";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+/*
+....##.....#####....#######..##.......
+..####....##...##..##.....##.##....##.
+....##...##.....##........##.##....##.
+....##...##.....##..#######..##....##.
+....##...##.....##.##........#########
+....##....##...##..##..............##.
+..######...#####...#########.......##.
+*/
+@media (max-width: 1024px) {
+  * {
+    font-size: 80%;
+  }
+  .menu nav a {
+    font-size: 500%;
+  }
+
+  .menu:last-of-type {
+    margin-right: 50px;
+  }
+
+  .our-command h2 {
+    font-size: 900%;
+  }
+
+  .our-command .photos {
+    width: 40px;
+    height: 40px;
+    gap: 15px;
+  }
+
+  .prod-header nav a {
+    font-size: 500%;
+  }
+
+  .social-rights p {
+    font-size: 250%;
+  }
+}
+
+/*
+..#######....#####.....#####..
+.##.....##..##...##...##...##.
+.##.....##.##.....##.##.....##
+..#######..##.....##.##.....##
+.##.....##.##.....##.##.....##
+.##.....##..##...##...##...##.
+..#######....#####.....#####..
+*/
+@media (max-width: 800px) {
+  .menus {
+    flex-wrap: wrap;
+  }
+}
+
+/*
+.########..#######....#####..
+.##....##.##.....##..##...##.
+.....##..........##.##.....##
+....##.....#######..##.....##
+...##.....##........##.....##
+...##.....##.........##...##.
+...##.....#########...#####..
+*/
+@media (max-width: 720px) {
+  * {
+    font-size: 70%;
+  }
+  .products {
+    display: grid;
+    grid-template-areas:
+      "A"
+      "B"
+      "C"
+      "D"
+      "E"
+      "F"
+      "G";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .menu nav a {
+    font-size: 900%;
+    margin-top: 10px;
+  }
+
+  .our-command h2 {
+    font-size: 900%;
+  }
+
+  .prod-header nav a {
+    font-size: 800%;
+  }
+
+  .social-rights p {
+    font-size: 450%;
+  }
+}
+
+/*
+.########..#######....#####..
+.##.......##.....##..##...##.
+.##.......##.....##.##.....##
+.#######...#######..##.....##
+.......##.##.....##.##.....##
+.##....##.##.....##..##...##.
+..######...#######....#####..
+*/
+@media (max-width: 580px) {
+  .container {
+    padding: 0 4%;
+  }
+
+  .header .container {
+    padding: 0 4%;
+    flex-flow: column;
+  }
+
+  .header .container .logo {
+    justify-content: center;
+  }
+
+  .header .container nav {
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .section-hero {
+    padding: 20px;
+  }
+  .section-hero .container img {
+    display: none;
+  }
+  .prod-header {
+    flex-flow: column;
+  }
+  .prod-header nav {
+    margin-top: 30px;
+  }
+
+  .section-command .container img {
+    display: none;
+  }
+
+  .social-rights {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  footer .container {
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .logo-phone {
+    margin-right: 0;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .logo-phone p:first-of-type,
+  .logo-phone p:last-of-type {
+    margin-top: 0;
+  }
+
+  .social-rights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .menus {
+    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/*
+..#######...#######....#####..
+.##.....##.##.....##..##...##.
+........##........##.##.....##
+..#######...#######..##.....##
+........##.##........##.....##
+.##.....##.##.........##...##.
+..#######..#########...#####..
+*/
+@media (max-width: 320px) {
+  .header .container nav {
+    flex-flow: column;
+  }
+
+  .header .container nav a {
+    padding: 10px;
+    margin: auto;
+  }
+}
